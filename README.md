@@ -1,10 +1,6 @@
-# Go Design Pattern
+# Abstract Factory Pattern
 
-Self taught simple design pattern implementation with go
-
-reference on [refactoring.guru](https://refactoring.guru/design-patterns)
-
-HINT: check branch
+Description TBA. But you could look for the code example :) ehe
 
 ## Contributing
 
