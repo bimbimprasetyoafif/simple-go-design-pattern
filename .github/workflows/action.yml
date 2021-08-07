@@ -29,3 +29,14 @@ jobs:
 
       - name: Test
         run: go test ./...
+
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: test cover
+        uses: shogo82148/actions-goveralls@v1
+        with:
+          path-to-profile: profile.cov
