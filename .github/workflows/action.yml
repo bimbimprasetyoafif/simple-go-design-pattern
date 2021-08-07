@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Test
-        run: go test ./...
+        run: go test -cover ./...
 
   coverage:
     runs-on: ubuntu-latest
