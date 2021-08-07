@@ -19,11 +19,9 @@ func (c *cashier) ChangeChef(chef chef.DoChef) {
 	c.chef = chef
 }
 
-func (c *cashier) ServeFood(flavour string, opts ...string) food.Food {
-	c.chef.Preparation()
-	c.chef.AddFlavour(flavour)
-	if opts != nil {
-		c.chef.AddOptional(opts...)
-	}
-	return c.chef.Bake()
+func (c *cashier) ServeFood(flavour string, opts ...string) food.AllFood {
+	return c.chef.Preparation().
+		AddFlavour(flavour).
+		AddOptional(opts...).
+		CookAndServe()
 }

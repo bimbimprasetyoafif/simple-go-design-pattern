@@ -26,7 +26,7 @@ func main() {
 	PrintFood(bSweet)
 }
 
-func PrintFood(food food.Food) {
+func PrintFood(food food.AllFood) {
 	fmt.Println("=========", food.GetName(), "=========")
 	fmt.Println("it's", food.GetFlavour())
 	fmt.Println("===========================")
