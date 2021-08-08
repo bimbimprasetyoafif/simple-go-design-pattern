@@ -1,10 +1,7 @@
-# Go Design Pattern
+# Singleton Pattern
 
-Self taught simple design pattern implementation with go
+Description TBA. But you could look for the code example :) ehe
 
-reference on [refactoring.guru](https://refactoring.guru/design-patterns)
-
-HINT: check branch
 
 ## Contributing
 
